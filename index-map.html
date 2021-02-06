@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleMap.css">
+    <link rel="stylesheet" href="style/styleMap.css">
         <title>MAP</title>
 </head>
 <body>
  
-    <div id="map"></div>
-    <script src="map.js"></script>
-    <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMkXO8UmRh3qMzS62JS-0nT4QnxbceBN0&callback=initMap">
+    <div onclick="findLocation()" id="map"></div>
+    <div class="modal" hidden>WELCOME TO: <h4></h4>
+    <button onclick="deleteMarker()">DEL</button>
+    </div>
+    <script src="js/local-storage.js"></script>
+    <script src="js/map.js"></script>
+    <script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaio-UIw-8MZ7bNW7yIv2Rwfdu6ExkW3E&callback=initMap">
 </script>
 </body>
 </html>
+AIzaSyAaio-UIw-8MZ7bNW7yIv2Rwfdu6ExkW3E

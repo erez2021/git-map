@@ -1,19 +1,19 @@
 'use strice'
-
+var user;
 
 // const KEY = 'userDB'
 
-const createUser = () => {
+function createUser () {
     const fullName = document.querySelector('[name=fullName]').value
     const date = document.querySelector('[name=date]').value
     const email = document.querySelector('[name=email]').value
-    const user = {
+    user = {
         fullName,
         date,
         email,
     }
     saveToStorage('user', user)
-    // _saveToStorage()
+
 }
 
 
